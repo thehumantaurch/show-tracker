@@ -1,0 +1,24 @@
+<%= form_for(@user, new_user_path) do %>
+  <%= f.text_field :first_name %>
+  <%= f.text_field :last_name %>
+  <%= f.text_field :email %>
+  <%= f.password :password %>
+  <%= f.text_field :address %>
+  <%= f.text_field :gender_identity %>
+  <%= f.text_field :racial_identity %>
+  <%= f.check_box :actor %>
+  <%= f.check_box :director %>
+  <%= f.check_box :stage_manager %>
+  <%= f.check_box :costume_designer %>
+  <%= f.check_box :set_designer %>
+  <%= f.check_box :light_designer %>
+  <%= f.check_box :sound_designer %>
+  <%= f.check_box :dance_choreographer %>
+  <%= f.check_box :fight_choreographer %>
+  <%= f.check_box :producer %>
+  <%= f.check_box :dramaturg %>
+  <%= f.check_box :playwright %>
+
+  <%= f.submit, "Create User" %>
+
+<% end %>
